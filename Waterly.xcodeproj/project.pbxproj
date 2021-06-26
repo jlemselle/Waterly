@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AAAE3F726872A8E00E3E23E /* WaterlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAAE3F626872A8E00E3E23E /* WaterlyApp.swift */; };
+		1AAAE3F926872A8E00E3E23E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAAE3F826872A8E00E3E23E /* ContentView.swift */; };
+		1AAAE3FB26872A9000E3E23E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AAAE3FA26872A9000E3E23E /* Assets.xcassets */; };
+		1AAAE3FE26872A9000E3E23E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AAAE3FD26872A9000E3E23E /* Preview Assets.xcassets */; };
+		1AAAE40026872A9000E3E23E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAAE3FF26872A9000E3E23E /* Persistence.swift */; };
+		1AAAE40326872A9000E3E23E /* Waterly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AAAE40126872A9000E3E23E /* Waterly.xcdatamodeld */; };
+		1AAAE40E26872A9000E3E23E /* WaterlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAAE40D26872A9000E3E23E /* WaterlyTests.swift */; };
+		1AAAE41926872A9000E3E23E /* WaterlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAAE41826872A9000E3E23E /* WaterlyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AAAE40A26872A9000E3E23E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AAAE3EB26872A8E00E3E23E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AAAE3F226872A8E00E3E23E;
+			remoteInfo = Waterly;
+		};
+		1AAAE41526872A9000E3E23E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AAAE3EB26872A8E00E3E23E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AAAE3F226872A8E00E3E23E;
+			remoteInfo = Waterly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AAAE3F326872A8E00E3E23E /* Waterly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waterly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAAE3F626872A8E00E3E23E /* WaterlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterlyApp.swift; sourceTree = "<group>"; };
+		1AAAE3F826872A8E00E3E23E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1AAAE3FA26872A9000E3E23E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AAAE3FD26872A9000E3E23E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1AAAE3FF26872A9000E3E23E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		1AAAE40226872A9000E3E23E /* Waterly.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Waterly.xcdatamodel; sourceTree = "<group>"; };
+		1AAAE40426872A9000E3E23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AAAE40926872A9000E3E23E /* WaterlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAAE40D26872A9000E3E23E /* WaterlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterlyTests.swift; sourceTree = "<group>"; };
+		1AAAE40F26872A9000E3E23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AAAE41426872A9000E3E23E /* WaterlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAAE41826872A9000E3E23E /* WaterlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterlyUITests.swift; sourceTree = "<group>"; };
+		1AAAE41A26872A9000E3E23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AAAE3F026872A8E00E3E23E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAAE40626872A9000E3E23E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAAE41126872A9000E3E23E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AAAE3EA26872A8E00E3E23E = {
+			isa = PBXGroup;
+			children = (
+				1AAAE3F526872A8E00E3E23E /* Waterly */,
+				1AAAE40C26872A9000E3E23E /* WaterlyTests */,
+				1AAAE41726872A9000E3E23E /* WaterlyUITests */,
+				1AAAE3F426872A8E00E3E23E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AAAE3F426872A8E00E3E23E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AAAE3F326872A8E00E3E23E /* Waterly.app */,
+				1AAAE40926872A9000E3E23E /* WaterlyTests.xctest */,
+				1AAAE41426872A9000E3E23E /* WaterlyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AAAE3F526872A8E00E3E23E /* Waterly */ = {
+			isa = PBXGroup;
+			children = (
+				1AAAE3F626872A8E00E3E23E /* WaterlyApp.swift */,
+				1AAAE3F826872A8E00E3E23E /* ContentView.swift */,
+				1AAAE3FA26872A9000E3E23E /* Assets.xcassets */,
+				1AAAE3FF26872A9000E3E23E /* Persistence.swift */,
+				1AAAE40426872A9000E3E23E /* Info.plist */,
+				1AAAE40126872A9000E3E23E /* Waterly.xcdatamodeld */,
+				1AAAE3FC26872A9000E3E23E /* Preview Content */,
+			);
+			path = Waterly;
+			sourceTree = "<group>";
+		};
+		1AAAE3FC26872A9000E3E23E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1AAAE3FD26872A9000E3E23E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1AAAE40C26872A9000E3E23E /* WaterlyTests */ = {
+			isa = PBXGroup;
+			children = (
+				1AAAE40D26872A9000E3E23E /* WaterlyTests.swift */,
+				1AAAE40F26872A9000E3E23E /* Info.plist */,
+			);
+			path = WaterlyTests;
+			sourceTree = "<group>";
+		};
+		1AAAE41726872A9000E3E23E /* WaterlyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1AAAE41826872A9000E3E23E /* WaterlyUITests.swift */,
+				1AAAE41A26872A9000E3E23E /* Info.plist */,
+			);
+			path = WaterlyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AAAE3F226872A8E00E3E23E /* Waterly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AAAE41D26872A9000E3E23E /* Build configuration list for PBXNativeTarget "Waterly" */;
+			buildPhases = (
+				1AAAE3EF26872A8E00E3E23E /* Sources */,
+				1AAAE3F026872A8E00E3E23E /* Frameworks */,
+				1AAAE3F126872A8E00E3E23E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Waterly;
+			productName = Waterly;
+			productReference = 1AAAE3F326872A8E00E3E23E /* Waterly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AAAE40826872A9000E3E23E /* WaterlyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AAAE42026872A9000E3E23E /* Build configuration list for PBXNativeTarget "WaterlyTests" */;
+			buildPhases = (
+				1AAAE40526872A9000E3E23E /* Sources */,
+				1AAAE40626872A9000E3E23E /* Frameworks */,
+				1AAAE40726872A9000E3E23E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AAAE40B26872A9000E3E23E /* PBXTargetDependency */,
+			);
+			name = WaterlyTests;
+			productName = WaterlyTests;
+			productReference = 1AAAE40926872A9000E3E23E /* WaterlyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1AAAE41326872A9000E3E23E /* WaterlyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AAAE42326872A9000E3E23E /* Build configuration list for PBXNativeTarget "WaterlyUITests" */;
+			buildPhases = (
+				1AAAE41026872A9000E3E23E /* Sources */,
+				1AAAE41126872A9000E3E23E /* Frameworks */,
+				1AAAE41226872A9000E3E23E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AAAE41626872A9000E3E23E /* PBXTargetDependency */,
+			);
+			name = WaterlyUITests;
+			productName = WaterlyUITests;
+			productReference = 1AAAE41426872A9000E3E23E /* WaterlyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AAAE3EB26872A8E00E3E23E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					1AAAE3F226872A8E00E3E23E = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					1AAAE40826872A9000E3E23E = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 1AAAE3F226872A8E00E3E23E;
+					};
+					1AAAE41326872A9000E3E23E = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 1AAAE3F226872A8E00E3E23E;
+					};
+				};
+			};
+			buildConfigurationList = 1AAAE3EE26872A8E00E3E23E /* Build configuration list for PBXProject "Waterly" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AAAE3EA26872A8E00E3E23E;
+			productRefGroup = 1AAAE3F426872A8E00E3E23E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AAAE3F226872A8E00E3E23E /* Waterly */,
+				1AAAE40826872A9000E3E23E /* WaterlyTests */,
+				1AAAE41326872A9000E3E23E /* WaterlyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AAAE3F126872A8E00E3E23E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAAE3FE26872A9000E3E23E /* Preview Assets.xcassets in Resources */,
+				1AAAE3FB26872A9000E3E23E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAAE40726872A9000E3E23E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAAE41226872A9000E3E23E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AAAE3EF26872A8E00E3E23E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAAE40326872A9000E3E23E /* Waterly.xcdatamodeld in Sources */,
+				1AAAE40026872A9000E3E23E /* Persistence.swift in Sources */,
+				1AAAE3F926872A8E00E3E23E /* ContentView.swift in Sources */,
+				1AAAE3F726872A8E00E3E23E /* WaterlyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAAE40526872A9000E3E23E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAAE40E26872A9000E3E23E /* WaterlyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAAE41026872A9000E3E23E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAAE41926872A9000E3E23E /* WaterlyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AAAE40B26872A9000E3E23E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AAAE3F226872A8E00E3E23E /* Waterly */;
+			targetProxy = 1AAAE40A26872A9000E3E23E /* PBXContainerItemProxy */;
+		};
+		1AAAE41626872A9000E3E23E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AAAE3F226872A8E00E3E23E /* Waterly */;
+			targetProxy = 1AAAE41526872A9000E3E23E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1AAAE41B26872A9000E3E23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1AAAE41C26872A9000E3E23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AAAE41E26872A9000E3E23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Waterly/Preview Content\"";
+				DEVELOPMENT_TEAM = 2A6W6FX49P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Waterly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesemselle.Waterly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AAAE41F26872A9000E3E23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Waterly/Preview Content\"";
+				DEVELOPMENT_TEAM = 2A6W6FX49P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Waterly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesemselle.Waterly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1AAAE42126872A9000E3E23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2A6W6FX49P;
+				INFOPLIST_FILE = WaterlyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesemselle.WaterlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Waterly.app/Waterly";
+			};
+			name = Debug;
+		};
+		1AAAE42226872A9000E3E23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2A6W6FX49P;
+				INFOPLIST_FILE = WaterlyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesemselle.WaterlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Waterly.app/Waterly";
+			};
+			name = Release;
+		};
+		1AAAE42426872A9000E3E23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2A6W6FX49P;
+				INFOPLIST_FILE = WaterlyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesemselle.WaterlyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Waterly;
+			};
+			name = Debug;
+		};
+		1AAAE42526872A9000E3E23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2A6W6FX49P;
+				INFOPLIST_FILE = WaterlyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesemselle.WaterlyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Waterly;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AAAE3EE26872A8E00E3E23E /* Build configuration list for PBXProject "Waterly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAAE41B26872A9000E3E23E /* Debug */,
+				1AAAE41C26872A9000E3E23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AAAE41D26872A9000E3E23E /* Build configuration list for PBXNativeTarget "Waterly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAAE41E26872A9000E3E23E /* Debug */,
+				1AAAE41F26872A9000E3E23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AAAE42026872A9000E3E23E /* Build configuration list for PBXNativeTarget "WaterlyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAAE42126872A9000E3E23E /* Debug */,
+				1AAAE42226872A9000E3E23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AAAE42326872A9000E3E23E /* Build configuration list for PBXNativeTarget "WaterlyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAAE42426872A9000E3E23E /* Debug */,
+				1AAAE42526872A9000E3E23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1AAAE40126872A9000E3E23E /* Waterly.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1AAAE40226872A9000E3E23E /* Waterly.xcdatamodel */,
+			);
+			currentVersion = 1AAAE40226872A9000E3E23E /* Waterly.xcdatamodel */;
+			path = Waterly.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1AAAE3EB26872A8E00E3E23E /* Project object */;
+}
