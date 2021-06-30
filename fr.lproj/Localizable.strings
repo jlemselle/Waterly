@@ -1,0 +1,15 @@
+/* 
+  Strings.strings
+  Waterly
+
+  Created by James Emselle on 30/6/21.
+  
+*/
+
+"Last watered the plants on" = "Plantes arrosées le";
+"at" = "à";
+"Watered" = "Arroser";
+"never" = "jamais";
+"Last Watered" = "Arrosées";
+"History" = "Historique";
+"Clear History" = "Effacer Historique";

@@ -29,5 +29,6 @@ struct HistoryList: View {
 struct HistoryList_Previews: PreviewProvider {
     static var previews: some View {
         HistoryList(history: .constant([Date()]))
+            .environment(\.locale, Locale(identifier: "fr"))
     }
 }

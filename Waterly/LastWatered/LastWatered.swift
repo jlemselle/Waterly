@@ -63,6 +63,7 @@ struct LastWatered_Previews: PreviewProvider {
             //    .environment(\.managedObjectContext, PersistenceController.emptyPreview.container.viewContext)
         }
         .environment(\.sizeCategory, .extraExtraLarge)
+        .environment(\.locale, Locale(identifier: "fr"))
         .previewDevice("iPhone 12 mini")
     }
 }

@@ -13,7 +13,7 @@ struct HistoryItem: View {
     var body: some View {
         HStack {
             Text(date, style: .date)
-            Text("on")
+            Text("at")
             Text(date, style: .time)
             Spacer()
             Image(systemName: "drop")
