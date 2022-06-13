@@ -6,64 +6,75 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct LastWatered: View {
-    @State var lastWatered: Date? = UserDefaults.standard.object(forKey: "LastWatered") as! Date?
-    @Binding var history: [Date]
+    @State var watering: Bool = false
+    @State var newDate: Date = Date()
+    @State var image: Image? = nil
+    @State var uiImage: UIImage? = nil
+    @State var comment: String = ""
+    @Environment(\.managedObjectContext) var managedObjectContext
+    
+    @FetchRequest(
+        entity: Water.entity(),
+        sortDescriptors: [
+            NSSortDescriptor(keyPath: \Water.timestamp, ascending: true)
+        ]
+    ) var history: FetchedResults<Water>
     
     var body: some View {
         VStack {
-            Text("Last watered the plants on")
-                .font(.title)
-            VStack {
-                if lastWatered != nil {
-                    Text(lastWatered ?? Date(), style: .date)
+            VStack(alignment: .center) {
+                if let timestamp = history.last?.timestamp {
+                    Text("You watered your plants on")
+                        .multilineTextAlignment(.center)
+                        .font(.title)
+                    Text(timestamp, style: .date)
                     Text("at").font(.subheadline)
-                    Text(lastWatered ?? Date(), style: .time)
+                    Text(timestamp, style: .time)
                 } else {
-                    Text("never")
+                    Text("You haven't watered your plants yet")
+                        .multilineTextAlignment(.center)
+                        .font(.title)
                 }
             }.font(.largeTitle)
             .padding(.bottom)
-            Button(action: {
-                let newDate = Date()
-                lastWatered = newDate
-                UserDefaults.standard.set(newDate, forKey: "LastWatered")
-                
-                history.append(newDate)
-                UserDefaults.standard.set(history, forKey: "History")
-            }, label: {
-                HStack {
-                    Text("Watered")
-                    Image(systemName: "drop.fill")
-                }
-            })
-            .padding()
-            .background(Color.blue)
-            .clipShape(Capsule())
-            .foregroundColor(.white)
-            .font(.title)
+            WaterButton() {
+                self.watering.toggle()
+            }
+        }
+        .navigationTitle("Home")
+        .sheet(isPresented: $watering) {
+            VStack {
+                Text("When did you water?")
+                    .font(.title)
+                Editor(date: $newDate, saving: {
+                    watered(at: newDate)
+                    image = nil
+                    comment = ""
+                    newDate = Date()
+                    self.watering.toggle()
+                }, cancel: {self.watering.toggle()}, image: $image, uiImage: $uiImage, comment: $comment).padding()
+            }
         }
     }
     
-    static func parseDate(from: Int) -> Date? {
-        if from == 0 {
-            return nil
-        } else {
-            return Date(timeIntervalSince1970: TimeInterval(from))
+    func watered(at: Date) {
+        let event = Water(context: managedObjectContext)
+        event.timestamp = at
+        event.image = uiImage?.jpegData(compressionQuality: 1)
+        event.comment = comment
+        do {
+            try managedObjectContext.save()
+        } catch {
+            // handle the Core Data error
         }
     }
 }
 
 struct LastWatered_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            LastWatered(history: .constant([Date()]))
-            //LastWatered()
-            //    .environment(\.managedObjectContext, PersistenceController.emptyPreview.container.viewContext)
-        }
-        .environment(\.sizeCategory, .extraExtraLarge)
-        .environment(\.locale, Locale(identifier: "fr"))
-        .previewDevice("iPhone 12 mini")
+        LastWatered()
     }
 }

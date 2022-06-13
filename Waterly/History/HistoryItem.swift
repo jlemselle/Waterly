@@ -8,15 +8,37 @@
 import SwiftUI
 
 struct HistoryItem: View {
-    var date: Date
+    var timestamp: Date
+    var comment: String
+    var image: UIImage?
+    
+    @State var zoomImage: Bool = false
     
     var body: some View {
-        HStack {
-            Text(date, style: .date)
-            Text("at")
-            Text(date, style: .time)
-            Spacer()
-            Image(systemName: "drop")
+        VStack(alignment: .leading) {
+            HStack {
+                Text(timestamp, style: .date)
+                Text("at")
+                Text(timestamp, style: .time)
+                Spacer()
+                if let uiImage = image {
+                    Image(uiImage: uiImage)
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                        .onTapGesture {
+                            zoomImage.toggle()
+                        }
+                        .sheet(isPresented: $zoomImage) {
+                            Image(uiImage: uiImage)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                        }
+                } else {
+                    Image(systemName: "drop")
+                }
+            }
+            Text(comment)
+                .font(.caption)
         }
         .padding()
     }
@@ -24,6 +46,6 @@ struct HistoryItem: View {
 
 struct HistoryItem_Previews: PreviewProvider {
     static var previews: some View {
-        HistoryItem(date: Date())
+        HistoryItem(timestamp: Date(), comment: "Example comment")
     }
 }

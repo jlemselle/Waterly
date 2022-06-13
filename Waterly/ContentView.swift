@@ -9,26 +9,39 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection: Tab = .lastWatered
-    @State var history: [Date] = UserDefaults.standard.object(forKey: "History") as! [Date]? ?? []
     
     enum Tab {
+        case plants
         case lastWatered
         case waterHistory
+        case stats
     }
     
     var body: some View {
         TabView(selection: $selection) {
-            LastWatered(history: $history)
+            LastWatered()
                 .tabItem {
-                    Label("Last Watered", systemImage: "drop")
+                    Label("Home", systemImage: "drop")
                 }
                 .tag(Tab.lastWatered)
             
-            HistoryList(history: $history)
+//            PlantEditor()
+//                .tabItem {
+//                    Label("Plants", systemImage: "leaf")
+//                }
+//                .tag(Tab.plants)
+            
+            HistoryList()
                 .tabItem {
                     Label("History", systemImage: "list.bullet")
                 }
                 .tag(Tab.waterHistory)
+            
+            Stats()
+                .tabItem {
+                    Label("Stats", systemImage: "chart.bar.xaxis")
+                }
+                .tag(Tab.stats)
         }
     }
 }
@@ -36,6 +49,5 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environment(\.locale, Locale(identifier: "fr"))
     }
 }

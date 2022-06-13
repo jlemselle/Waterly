@@ -1,15 +1,31 @@
 /* 
-  Strings.strings
+  Localizable.strings
   Waterly
 
   Created by James Emselle on 30/6/21.
   
 */
 
-"Last watered the plants on" = "Plantes arrosées le";
+"You watered your plants on" = "Vous avez arrosé vos plantes le";
 "at" = "à";
-"Watered" = "Arroser";
-"never" = "jamais";
-"Last Watered" = "Arrosées";
+"Water" = "Arroser";
+"You haven't watered your plants yet" = "Vous n'avez pas encore arrosé vos plantes";
+"Home" = "Acceuil";
 "History" = "Historique";
-"Clear History" = "Effacer Historique";
+"Clear history" = "Effacer l'historique";
+"Wipe all history" =" Effacer tout l'historique";
+"Are you sure you want to wipe your history? This cannot be undone." = "Vous êtes sûr de vouloir tout effacer ? Cette operation est définitive.";
+"Yes" = "Oui";
+"No" = "Non";
+"When did you water?" = "Vous les avez arrosé quand ?";
+"Watered on" = "Arrosées le";
+"Save" = "Sauvegarder";
+"Cancel" = "Annuler";
+"Add photo" = "Ajouter une photo";
+"Retake photo" = "Reprendre la photo";
+"Time between waters" = "Temps entre arrosages";
+"Please log at least 2 waters for statistics" = "Veuillez enregistrer au moins 2 arrosages pour les statistiques";
+"days" = "jours";
+"Average" = "Moyen";
+"Shortest" = "Plus court";
+"Longest" = "Plus long";
