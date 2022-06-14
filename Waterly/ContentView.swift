@@ -6,9 +6,9 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 struct ContentView: View {
-    @State private var selection: Tab = .lastWatered
     
     enum Tab {
         case plants
@@ -18,12 +18,11 @@ struct ContentView: View {
     }
     
     var body: some View {
-        TabView(selection: $selection) {
+        TabView() {
             LastWatered()
                 .tabItem {
                     Label("Home", systemImage: "drop")
                 }
-                .tag(Tab.lastWatered)
             
 //            PlantEditor()
 //                .tabItem {
@@ -35,13 +34,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("History", systemImage: "list.bullet")
                 }
-                .tag(Tab.waterHistory)
             
             Stats()
                 .tabItem {
                     Label("Stats", systemImage: "chart.bar.xaxis")
                 }
-                .tag(Tab.stats)
         }
     }
 }

@@ -14,6 +14,7 @@ struct Editor: View {
     @Binding var image: Image?
     @Binding var uiImage: UIImage?
     @Binding var comment: String
+    @Binding var setReminder: Bool
     @State var showCaptureImageView: Bool = false
     
     var body: some View {
@@ -22,6 +23,9 @@ struct Editor: View {
                 .padding()
             
             TextField("Comment", text: $comment)
+                .padding()
+            
+            Toggle("Remind me again in 3 minutes", isOn: $setReminder)
                 .padding()
             
             CameraButton(image: $image, uiImage: $uiImage)
@@ -52,6 +56,6 @@ struct Editor: View {
 
 struct Editor_Previews: PreviewProvider {
     static var previews: some View {
-        Editor(date: .constant(Date()), saving: {}, cancel: {}, image: .constant(nil), uiImage: .constant(nil), comment: .constant(""))
+        Editor(date: .constant(Date()), saving: {}, cancel: {}, image: .constant(nil), uiImage: .constant(nil), comment: .constant(""), setReminder: .constant(false))
     }
 }

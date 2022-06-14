@@ -14,7 +14,10 @@ struct LastWatered: View {
     @State var image: Image? = nil
     @State var uiImage: UIImage? = nil
     @State var comment: String = ""
+    @State var setReminder: Bool = false
     @Environment(\.managedObjectContext) var managedObjectContext
+    
+    let reminder: Reminder = Reminder()
     
     @FetchRequest(
         entity: Water.entity(),
@@ -55,7 +58,7 @@ struct LastWatered: View {
                     comment = ""
                     newDate = Date()
                     self.watering.toggle()
-                }, cancel: {self.watering.toggle()}, image: $image, uiImage: $uiImage, comment: $comment).padding()
+                }, cancel: {self.watering.toggle()}, image: $image, uiImage: $uiImage, comment: $comment, setReminder: $setReminder).padding()
             }
         }
     }
@@ -69,6 +72,16 @@ struct LastWatered: View {
             try managedObjectContext.save()
         } catch {
             // handle the Core Data error
+        }
+        
+        if (setReminder) {
+            var dateComponent = DateComponents()
+            dateComponent.minute = 3
+            if let futureDate = Calendar.current.date(byAdding: dateComponent, to: at) {
+                if futureDate > Date.now {
+                    reminder.setReminder(at: futureDate)
+                }
+            }
         }
     }
 }

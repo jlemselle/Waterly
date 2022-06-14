@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A1421AD28589B1600506BA2 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1421AC28589B1600506BA2 /* Reminder.swift */; };
 		1A15F2BB268C61CD00989793 /* HistoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A15F2BA268C61CD00989793 /* HistoryList.swift */; };
 		1A15F2BF268C6D2200989793 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A15F2BE268C6D2200989793 /* HistoryItem.swift */; };
 		1A15F2C2268C83EE00989793 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A15F2C4268C83EE00989793 /* Localizable.strings */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A1421AC28589B1600506BA2 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		1A15F2BA268C61CD00989793 /* HistoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryList.swift; sourceTree = "<group>"; };
 		1A15F2BE268C6D2200989793 /* HistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
 		1A15F2C3268C83EE00989793 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A1421AB28589AF600506BA2 /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				1A1421AC28589B1600506BA2 /* Reminder.swift */,
+			);
+			path = Reminder;
+			sourceTree = "<group>";
+		};
 		1A15F2B8268C618A00989793 /* LastWatered */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +125,7 @@
 		1AAAE3F526872A8E00E3E23E /* Waterly */ = {
 			isa = PBXGroup;
 			children = (
+				1A1421AB28589AF600506BA2 /* Reminder */,
 				1ABC00D2269128CD00FD0E0F /* Plants */,
 				1A85089A268DE86700EC7D2E /* Persistence.swift */,
 				1A850897268DE85900EC7D2E /* Waterly.xcdatamodeld */,
@@ -167,7 +178,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					1AAAE3F226872A8E00E3E23E = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -223,6 +234,7 @@
 				1A85089B268DE86700EC7D2E /* Persistence.swift in Sources */,
 				1A850889268D24B500EC7D2E /* WaterButton.swift in Sources */,
 				1A85088F268DA8E800EC7D2E /* Stats.swift in Sources */,
+				1A1421AD28589B1600506BA2 /* Reminder.swift in Sources */,
 				1AAAE3F726872A8E00E3E23E /* WaterlyApp.swift in Sources */,
 				1A15F2BF268C6D2200989793 /* HistoryItem.swift in Sources */,
 				1A850892268DD73700EC7D2E /* CaptureImageView.swift in Sources */,
@@ -248,6 +260,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -309,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
